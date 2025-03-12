@@ -1,1 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
 
+h1 {
+  color: #2e3e50;
+}
+
+#library {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f9f9f9;
+}
+
+.books h2 {
+  font-size: 18px;
+  margin:10px 0;
+}
