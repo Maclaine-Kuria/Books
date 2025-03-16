@@ -1,6 +1,23 @@
 let books = {
   (id: 1, title: "The great Gataby", author: "F. Scott Fitzgerald", year: 1925, isAvailable: true),
   (id: 2
+
+    // Function to render booka on the page
+function displayBooks ( )  (
+const l1braryDiv - document.getElementById("11brary");
+l1braryDiv.jnnerHTML - ""; // Clear existing content
+books.forEach(book=>1
+let bookDiv= document.createElement("div");
+bookDiv.classList.add("book");
+
+baokDiv.innerHTML=
+<h2>$(book.title}</h2>
+<p><strong>Author:</strong> $(book.author)</p>
+<p><strong>Year:</strong> $ {book. year}</p>
+<p><strong>Status:</strong> ${book.isAvailable ? "Available" :"Borrowed"}</p>
+<button class="borrow" $(!book.isAvailable ? "disabled" : "")
+onclick="borrowBook ($ {book. id}) ">Borrow</button>
+
 <button class="return" $(book.isAvailable ? "disabled" : "")
 onclick="returnBook ($ibook.id) ) ">Return</button>
 ;
