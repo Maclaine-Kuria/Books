@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management System</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  
-  <body>
+</head>
+<body>
     <h1>Library Management System</h1>
-    <div id="library">
-      <!-- Books will be loaded here dynamically -->
+
+    <!-- Search Bar -->
+    <input type="text" id="search-bar" placeholder="Search by title or author..." onkeyup="searchBooks()">
+
+    <!-- Book Addition Form -->
+    <div id="add-book-form">
+        <h2>Add a New Book</h2>
+        <input type="text" id="book-title" placeholder="Book Title" required>
+        <input type="text" id="book-author" placeholder="Author" required>
+        <input type="number" id="book-year" placeholder="Year" required>
+        <select id="book-status">
+            <option value="true">Available</option>
+            <option value="false">Borrowed</option>
+        </select>
+        <button onclick="addBook()">Add Book</button>
     </div>
+
+    <!-- Book List -->
+    <div id="library"></div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
